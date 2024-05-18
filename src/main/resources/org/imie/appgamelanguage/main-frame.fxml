@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.imie.appgamelanguage.MainFrameController">
+  <top>
+    <ToolBar fx:id="jToolBar1" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <items>
+        <Button fx:id="BtnChoixFichier" onAction="#handleBtnChoixFichier" mnemonicParsing="false" text="Lire Fichier" />
+        <Button fx:id="BtnAfficherScore" onAction="#handleBtnAfficherScore" mnemonicParsing="false" text="Afficher le score" />
+      </items>
+    </ToolBar>
+  </top>
+  <center>
+    <TableView fx:id="jTable1" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <columns>
+
+      </columns>
+    </TableView>
+  </center>
+  <bottom>
+    <VBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <children>
+        <Label fx:id="LabelResultat" text="Le résultat" />
+      </children>
+    </VBox>
+  </bottom>
+
+</BorderPane>
